@@ -5,12 +5,6 @@ require 'pg'
 
 class BookmarkManager < Sinatra::Base
 
-  # @conn = PG.connect( dbname: 'bookmark_manager' )
-
-  configure :test do
-    # @conn = PG.connect( dbname: 'bookmark_manager_test' )
-  end
-
   configure :development do
     register Sinatra::Reloader
   end
